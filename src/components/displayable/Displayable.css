@@ -1,0 +1,25 @@
+.displayable {
+    width: 30%;
+    padding: 5%;
+    margin: 1em 0;
+    border-radius: 1em;
+    align-items: center;
+    color: var(--clr-black);
+}
+
+.displayable p span {
+    color: var(--clr-gray);
+    font-size: var(--fnt-sizeSmaller);
+}
+
+@media screen and (max-width: 768px) {
+    .displayable {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .displayable {
+        width: 100%;
+    }
+}
