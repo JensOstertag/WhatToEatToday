@@ -96,6 +96,20 @@ a.underline {
   text-decoration: underline;
 }
 
+button.simple-button {
+  background-color: var(--clr-brightColor1);
+  color: var(--clr-white);
+  border: none;
+  border-radius: .25em;
+  padding: .5em;
+  cursor: pointer;
+  transition: background-color 100ms linear;
+}
+
+button.simple-button:hover {
+  background-color: var(--clr-brightColor2);
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 1.5px;
