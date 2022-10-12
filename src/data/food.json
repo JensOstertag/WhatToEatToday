@@ -1,0 +1,46 @@
+{
+    "main-ingredients": [
+        {
+            "name": "Example Main Ingredient",
+            "link": "",
+            "tips": [
+                "This is an example main ingredient"
+            ],
+            "vegetarian": true,
+            "vegan": true
+        }
+    ],
+    "garnish": [
+        {
+            "name": "Example Garnish",
+            "link": "",
+            "tips": [
+                "This is an example garnish"
+            ],
+            "vegetarian": true,
+            "vegan": true
+        }
+    ],
+    "fast-food": [
+        {
+            "name": "Example Fast Food Restaurant",
+            "link": "",
+            "tips": [
+                "This is an example frozen good"
+            ],
+            "vegetarian": true,
+            "vegan": true
+        }
+    ],
+    "restaurants": [
+        {
+            "name": "Example Restaurant",
+            "link": "",
+            "tips": [
+                "This is an example restaurant"
+            ],
+            "vegetarian": true,
+            "vegan": true
+        }
+    ]
+}
