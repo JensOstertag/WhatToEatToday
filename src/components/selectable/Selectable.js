@@ -27,7 +27,11 @@ class Selectable extends React.Component {
             }} className="selectable">
                 <img src={this.state.image} />
                 <p>{this.state.title}</p>
-                <p className='nomargin'><span>{this.state.description}</span></p>
+                {
+                    this.state.description.map((item, i) => (
+                        <p className='nomargin' key={i}><span>{item}</span></p>
+                    ))
+                }
             </Link>
         );
     }
