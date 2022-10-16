@@ -7,6 +7,9 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
 import Home from './pages/home/Home';
+import FoodSelection from './pages/food-selection/FoodSelection';
+import EatingHabits from './pages/eating-habits/EatingHabits';
+import Result from './pages/result/Result';
 
 import RouteChanged from './RouteChanged.js';
 
@@ -19,6 +22,9 @@ class App extends React.Component {
           <RouteChanged>
             <Routes>
               <Route index element={<Home />} />
+              <Route path="/food-selection" element={<FoodSelection />} />
+              <Route path="/eating-habits" element={<EatingHabits />} />
+              <Route path="/result" element={<Result />} />
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
           </RouteChanged>
