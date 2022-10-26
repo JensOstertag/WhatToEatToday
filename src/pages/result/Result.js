@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Display from '../../components/display/Display';
 import Displayable from '../../components/displayable/Displayable';
@@ -91,6 +92,14 @@ class Result extends React.Component {
                         ))
                     }
                 </Display>
+                <p>
+                    Not happy? Feel free to generate a new meal:
+                </p>
+                <Link to="/food-selection">
+                    <button className="simple-button">
+                        <p className="nomargin">Regenerate</p>
+                    </button>
+                </Link>
             </section>
         );
     }
