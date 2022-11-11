@@ -25,7 +25,7 @@ class Selectable extends React.Component {
             <Link to={this.state.linkTo} onClick={() => {
                 this.setStorage();
             }} className="selectable">
-                <img src={this.state.image} />
+                <img src={this.state.image} alt={this.state.image} />
                 <p>{this.state.title}</p>
                 {
                     this.state.description.map((item, i) => (
