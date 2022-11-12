@@ -15,7 +15,7 @@ class Displayable extends React.Component {
     render() {
         return (
             <div className="displayable">
-                <img src={this.state.image} />
+                <img src={this.state.image} alt={this.state.image} />
                 <p>{this.state.title}</p>
                 {
                     this.state.description.map((item, i) => (
