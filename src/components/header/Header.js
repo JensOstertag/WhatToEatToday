@@ -9,7 +9,7 @@ class Header extends React.Component {
             <nav>
                 <div className="logo">
                     <a href={process.env.PUBLIC_URL}>
-                        <img src={process.env.PUBLIC_URL + "/img/icon.svg"} />
+                        <img src={process.env.PUBLIC_URL + "/img/icon.svg"} alt="logo" />
                         <p>What To Eat Today?</p>
                     </a>
                 </div>
