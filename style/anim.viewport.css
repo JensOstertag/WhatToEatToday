@@ -1,0 +1,32 @@
+.viewport-animation {
+  position: relative;
+  transition: all 250ms ease;
+}
+
+.viewport-animation-hidden {
+  opacity: 0%;
+}
+
+.viewport-animation-hidden.viewport-left {
+  left: -50px;
+}
+
+.viewport-animation-hidden.viewport-right {
+  left: 50px;
+}
+
+.viewport-animation-hidden.viewport-top {
+  top: -50px;
+}
+
+.viewport-animation-hidden.viewport-bottom {
+  top: 50px;
+}
+
+.viewport-animation-shown {
+  opacity: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
