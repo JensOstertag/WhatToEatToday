@@ -15,7 +15,11 @@ class Displayable extends React.Component {
     render() {
         return (
             <div className="displayable">
-                <img src={this.state.image} alt={this.state.image} />
+                <img id={"img-" + this.state.image.replaceAll("/", "-")} src={this.state.image} alt={this.state.image} onError={() => {
+                    document.querySelectorAll("#img-" + this.state.image.replaceAll("/", "-")).forEach(image => {
+                        image.style.display = "none";
+                    });
+                }} />
                 <p>{this.state.title}</p>
                 {
                     this.state.description.map((item, i) => (
