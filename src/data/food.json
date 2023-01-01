@@ -1,10 +1,32 @@
 {
     "main-ingredients": [
         {
-            "name": "Example Main Ingredient",
+            "name": "Meat",
             "link": "",
             "tips": [
-                "This is an example main ingredient"
+                "For a quick meal, you should pick a relatively thin cut and possibly one that you're comfortable with, e.g. a steak, pork chops or chicken breast.",
+                "Consider buying meat fresh and if possible, from a local butcher.",
+                "Specially with meat, only buy what you need and use it within a few days."
+            ],
+            "vegetarian": false,
+            "vegan": false
+        },
+        {
+            "name": "Fish",
+            "link": "",
+            "tips": [
+                "For a quick meal, you should pick a piece that is relatively easy to prepare and possibly one that you're confortable with.",
+                "Consider buying fish fresh and if possible, from a local fishmonger.",
+                "Specially with fish, only buy what you need and use it within a few days."
+            ],
+            "vegetarian": false,
+            "vegan": false
+        },
+        {
+            "name": "Potato wedges",
+            "link": "",
+            "tips": [
+                "Potato wedges can be made with a variety of different spices and sauces."
             ],
             "vegetarian": true,
             "vegan": true
@@ -12,32 +34,136 @@
     ],
     "garnish": [
         {
-            "name": "Example Garnish",
+            "name": "Mix of various vegetables",
             "link": "",
             "tips": [
-                "This is an example garnish"
+                "E.g. tomatos, bellpeppers, carrots, potatoes, onions or other, ideally seasonal, vegetables can be cooked together."
             ],
+            "vegetarian": true,
+            "vegan": true
+        },
+        {
+            "name": "Rice",
+            "link": "",
+            "tips": [],
+            "vegetarian": true,
+            "vegan": true
+        },
+        {
+            "name": "Pasta",
+            "link": "",
+            "tips": [
+                "A single type of pasta can get boring very quickly. Try using different pasta types."
+            ],
+            "vegetarian": true,
+            "vegan": true
+        },
+        {
+            "name": "Mixed salad",
+            "link": "",
+            "tips": [],
             "vegetarian": true,
             "vegan": true
         }
     ],
     "fast-food": [
         {
-            "name": "Example Fast Food Restaurant",
+            "name": "Deep-fried pizza",
+            "link": "",
+            "tips": [],
+            "vegetarian": true,
+            "vegan": true
+        },
+        {
+            "name": "Fish fingers",
             "link": "",
             "tips": [
-                "This is an example frozen good"
+                "If prepared in the oven, fish fingers can be made with a potion of french fries."
+            ],
+            "vegetarian": false,
+            "vegan": false
+        },
+        {
+            "name": "Chicken nuggets",
+            "link": "",
+            "tips": [
+                "If prepared in the oven, chicken nuggets can be made with a potion of french fries."
+            ],
+            "vegetarian": false,
+            "vegan": false
+        },
+        {
+            "name": "Croquettes",
+            "link": "",
+            "tips": [
+                "Due to different preparation techniques, some croquettes might not be vegan.",
+                "If prepared in the oven, croquettes can be made with a potion of french fries."
             ],
             "vegetarian": true,
             "vegan": true
+        },
+        {
+            "name": "Baked fish",
+            "link": "",
+            "tips": [
+                "If prepared in the oven, baked fish can be made with a potion of french fries."
+            ],
+            "vegetarian": false,
+            "vegan": false
         }
     ],
     "restaurants": [
         {
-            "name": "Example Restaurant",
+            "name": "Fast food",
             "link": "",
             "tips": [
-                "This is an example restaurant"
+                "Fast food restaurants don't tend to have a wide selection of vegetarian or vegan food. If required, please make sure that they're offering enough alternatives."
+            ],
+            "vegetarian": true,
+            "vegan": true
+        },
+        {
+            "name": "Pizza",
+            "link": "",
+            "tips": [],
+            "vegetarian": true,
+            "vegan": true
+        },
+        {
+            "name": "Burger",
+            "link": "",
+            "tips": [
+                "Burger restaurants don't tend to have a wide selection of vegetarian or vegan food. If required, please make sure that they're offering enough alternatives."
+            ],
+            "vegetarian": true,
+            "vegan": true
+        },
+        {
+            "name": "Steakhouse",
+            "link": "",
+            "tips": [],
+            "vegetarian": false,
+            "vegan": false
+        },
+        {
+            "name": "Fish restaurant",
+            "link": "",
+            "tips": [],
+            "vegetarian": false,
+            "vegan": false
+        },
+        {
+            "name": "Italian restaurant",
+            "link": "",
+            "tips": [],
+            "vegetarian": true,
+            "vegan": true
+        },
+        {
+            "name": "Greek restaurant",
+            "link": "",
+            "tips": [
+                "Greek restaurants don't tend to have a wide selection of vegetarian or vegan food. If required, please make sure that they're offering enough alternatives."
             ],
             "vegetarian": true,
             "vegan": true
