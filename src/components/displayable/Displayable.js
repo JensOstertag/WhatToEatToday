@@ -1,6 +1,8 @@
 import React from 'react';
 import './Displayable.css';
 
+const websiteConfig = require("../../data/websiteconfig.json");
+
 class Displayable extends React.Component {
     constructor(props) {
         super(props);
@@ -16,9 +18,11 @@ class Displayable extends React.Component {
         return (
             <div className="displayable">
                 <img id={"img-" + this.state.image.replaceAll("/", "-")} src={this.state.image} alt={this.state.image} onError={() => {
-                    document.querySelectorAll("#img-" + this.state.image.replaceAll("/", "-")).forEach(image => {
-                        image.style.display = "none";
-                    });
+                    if(!(websiteConfig.debug)) {
+                        document.querySelectorAll("#img-" + this.state.image.replaceAll("/", "-")).forEach(image => {
+                            image.style.display = "none";
+                        });
+                    }
                 }} />
                 <p>{this.state.title}</p>
                 {

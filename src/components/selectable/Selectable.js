@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './Selectable.css';
 
+const websiteConfig = require("../../data/websiteconfig.json");
+
 class Selectable extends React.Component {
     constructor(props) {
         super(props);
@@ -26,9 +28,11 @@ class Selectable extends React.Component {
                 this.setStorage();
             }} className="selectable">
                 <img id={"img-" + this.state.image.replaceAll("/", "-")} src={this.state.image} alt={this.state.image} onError={() => {
-                    document.querySelectorAll("#img-" + this.state.image.replaceAll("/", "-")).forEach(image => {
-                        image.style.display = "none";
-                    });
+                    if(!(websiteConfig.debug)) {
+                        document.querySelectorAll("#img-" + this.state.image.replaceAll("/", "-")).forEach(image => {
+                            image.style.display = "none";
+                        });
+                    }
                 }} />
                 <p>{this.state.title}</p>
                 {
