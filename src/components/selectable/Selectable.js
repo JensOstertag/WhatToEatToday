@@ -25,7 +25,11 @@ class Selectable extends React.Component {
             <Link to={this.state.linkTo} onClick={() => {
                 this.setStorage();
             }} className="selectable">
-                <img src={this.state.image} alt={this.state.image} />
+                <img id={"img-" + this.state.image.replaceAll("/", "-")} src={this.state.image} alt={this.state.image} onError={() => {
+                    document.querySelectorAll("#img-" + this.state.image.replaceAll("/", "-")).forEach(image => {
+                        image.style.display = "none";
+                    });
+                }} />
                 <p>{this.state.title}</p>
                 {
                     this.state.description.map((item, i) => (
