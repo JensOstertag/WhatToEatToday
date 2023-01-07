@@ -83,24 +83,34 @@ class Result extends React.Component {
 
     render() {
         return (
-            <section>
-                <p>I'd recommend you to have the following Dinner:</p>
-                <Display>
-                    {
-                        this.state.foundFood.map((found, i) => (
-                            <Displayable key={i} name={found.title} title={found.name} description={found.tips} image={found.link} />
-                        ))
-                    }
-                </Display>
-                <p>
-                    Not happy? Feel free to generate a new meal:
-                </p>
-                <Link to="/food-selection">
-                    <button className="simple-button">
-                        <p className="nomargin">Regenerate</p>
-                    </button>
-                </Link>
-            </section>
+            <div>
+                <section>
+                    <p>I'd recommend you to have the following Dinner:</p>
+                    <Display>
+                        {
+                            this.state.foundFood.map((found, i) => (
+                                <Displayable key={i} name={found.title} title={found.name} description={found.tips} image={found.link} />
+                            ))
+                        }
+                    </Display>
+                    <p>
+                        Not happy? Feel free to generate a new meal:
+                    </p>
+                    <Link to="/food-selection">
+                        <button className="simple-button">
+                            <p className="nomargin">Regenerate</p>
+                        </button>
+                    </Link>
+                </section>
+                <section>
+                    <h1>
+                        Recommendations
+                    </h1>
+                    <p>
+                        In case you have ideas for new ingredients or want to report a bug, please do so on the <a href="https://github.com/JensOstertag/WhatToEatToday/issues" target="_blank" rel="noopener noreferrer">GitHub repository</a>.
+                    </p>
+                </section>
+            </div>
         );
     }
 }
