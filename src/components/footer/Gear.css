@@ -1,0 +1,6 @@
+.svg-gear path,
+.svg-gear rect,
+.svg-gear circle {
+    fill: var(--clr-font);
+    stroke: var(--clr-font);
+}

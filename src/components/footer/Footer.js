@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Logo from '../logo/Logo';
+import Gear from './Gear'
+
 const websiteConfig = require("../../data/websiteconfig.json");
 
 class Footer extends React.Component {
@@ -10,11 +13,11 @@ class Footer extends React.Component {
                     <hr />
                     <div className="footer-text">
                         <div className="footer-logo">
-                            <img src={process.env.PUBLIC_URL + "/img/icon.svg"} alt="" />
+                            <Logo />
                             What To Eat Today?
                         </div>
                         <span><p className="copyright">&copy; 2020 - {new Date().getFullYear()} &nbsp; </p></span><span><p>Jens Ostertag</p></span>
-                        <p className="version"><img src={process.env.PUBLIC_URL + "/img/ico/gear.svg"} className="gear" alt="gear" /> Version: {websiteConfig.version}</p>
+                        <p className="version"><Gear className="gear" /> Version: {websiteConfig.version}</p>
                     </div>
                 </div>
             </footer>

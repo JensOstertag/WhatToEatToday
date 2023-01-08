@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+import Logo from '../logo/Logo';
+
 import * as Sidebar from './sidebar.js';
 
 class Header extends React.Component {
@@ -9,7 +11,7 @@ class Header extends React.Component {
             <nav>
                 <div className="logo">
                     <a href={process.env.PUBLIC_URL}>
-                        <img src={process.env.PUBLIC_URL + "/img/icon.svg"} alt="logo" />
+                        <Logo />
                         <p>What To Eat Today?</p>
                     </a>
                 </div>
