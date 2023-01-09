@@ -4,7 +4,6 @@ nav {
   align-items: center;
   min-height: 10vh;
   padding: 0 2.5%;
-  background: var(--clr-bright1);
   /* box-shadow: 0 1px 2px rgba(0,0,0,0.07),
                 0 2px 4px rgba(0,0,0,0.07),
                 0 4px 8px rgba(0,0,0,0.07),
@@ -25,7 +24,7 @@ nav {
 }
 
 .logo a p {
-  color: var(--clr-black);
+  color: var(--clr-font);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -35,12 +34,20 @@ nav {
   margin-bottom: 0;
 }
 
-.logo a img {
+.logo a img,
+.logo a svg {
   float: left;
   max-height: 7vh;
   min-height: 50px;
   margin-right: 15px;
   border-radius: 7.5px;
+}
+
+.logo a svg path,
+.logo a svg rect,
+.logo a svg circle {
+  fill: var(--clr-font);
+  stroke: var(--clr-font);
 }
 
 @media screen and (max-width: 480px) {
@@ -75,8 +82,8 @@ nav ul {
   width: 40%;
   top: 10vh;
   right: 0;
-  background-color: var(--clr-bright1);
-  color: var(--clr-black);
+  background-color: var(--clr-background);
+  color: var(--clr-font);
   transform: translateX(0%);
   transition: transform 500ms ease-in;
   z-index: 2;
@@ -87,7 +94,7 @@ nav ul {
   margin: 0 5%;
   height: 1px;
   border: none;
-  background: var(--clr-dark1);
+  background: var(--clr-font-light);
 }
 
 /* Default Nav Links Style */
@@ -96,19 +103,19 @@ nav ul {
 }
 
 .nav-links span {
-  color: var(--clr-black);
+  color: var(--clr-font);
   text-decoration: none;
   font-size: var(--fnt-sizeDefault);
 }
 
 .nav-links span:hover {
-  border-bottom: solid var(--clr-black) 3px;
+  border-bottom: solid var(--clr-font) 3px;
   transition: all 100ms linear;
 }
 
 .nav-links .selected {
   font-weight: 600;
-  border-bottom: solid var(--clr-white) 3px;
+  border-bottom: solid var(--clr-font) 3px;
 }
 
 /* Active Nav Links Style */
@@ -130,7 +137,7 @@ nav ul {
 .burger div {
   width: 25px;
   height: 2px;
-  background-color: var(--clr-black);
+  background-color: var(--clr-font);
   margin: 6px;
   cursor: pointer;
   transition: all 200ms linear;
