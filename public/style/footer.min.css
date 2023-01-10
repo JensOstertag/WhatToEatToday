@@ -54,7 +54,7 @@ footer hr {
 
 .footer-sections .footer-section .footer-link:hover {
   text-decoration: underline;
-  transition: all 50ms linear;
+  transition: text-decoration 50ms linear;
 }
 
 .footer-logo {

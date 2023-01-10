@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import Logo from '../logo/Logo';
+import DarkModeToggle from './DarkModeToggle';
 
 import * as Sidebar from './sidebar.js';
 
@@ -18,6 +19,9 @@ class Header extends React.Component {
                 <ul className="nav-links nav-default">
                     <li><Link to={process.env.PUBLIC_URL + "/"}><span>Home</span></Link></li>
                     <hr />
+                    <div className="dark-mode-toggle-container">
+                        <DarkModeToggle />
+                    </div>
                 </ul>
 
                 <div className="burger" onClick={Sidebar.toggleSidebar}>

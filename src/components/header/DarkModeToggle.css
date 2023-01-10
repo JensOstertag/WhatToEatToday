@@ -1,0 +1,38 @@
+.dark-mode-toggle {
+    background-color: var(--clr-gray);
+    width: 5em;
+    height: 2.5em;
+    padding: .25em;
+    float: right;
+    border-radius: 1.25em;
+    cursor: pointer;
+}
+
+.dark-mode-toggle .dark-mode-toggle-highlight {
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    background-color: var(--clr-font-invert);
+    padding: .5em;
+}
+
+body.darkmode .dark-mode-toggle .dark-mode-toggle-highlight {
+    float: right;
+}
+
+body:not(.darkmode) .dark-mode-toggle .dark-mode-toggle-highlight {
+    float: left;
+}
+
+.dark-mode-toggle svg {
+    height: 1em;
+    margin: auto 0;
+}
+
+body.darkmode .dark-mode-toggle .svg-sun {
+    display: none;
+}
+
+body:not(.darkmode) .dark-mode-toggle .svg-moon {
+    display: none;
+}
