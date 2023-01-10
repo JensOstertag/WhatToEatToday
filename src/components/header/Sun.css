@@ -1,0 +1,5 @@
+.svg-sun path,
+.svg-sun rect,
+.svg-sun circle {
+    stroke: var(--clr-font-invert);
+}

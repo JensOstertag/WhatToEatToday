@@ -1,0 +1,5 @@
+.svg-moon path,
+.svg-moon rect,
+.svg-moon circle {
+    stroke: var(--clr-font-invert);
+}
