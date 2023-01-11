@@ -9,10 +9,10 @@ import * as Darkmode from './darkmode.js';
 class DarkModeToggle extends React.Component {
     render() {
         return (
-            <div className="dark-mode-toggle" onClick={() => {
+            <div className="dark-mode-toggle darkmode-transition" onClick={() => {
                 Darkmode.toggleDarkmode();
             }}>
-                <div className="dark-mode-toggle-highlight">
+                <div className="dark-mode-toggle-highlight darkmode-transition">
                     <Sun />
                     <Moon />
                 </div>

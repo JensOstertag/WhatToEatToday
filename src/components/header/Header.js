@@ -11,10 +11,10 @@ class Header extends React.Component {
         return (
             <nav>
                 <div className="logo">
-                    <a href={process.env.PUBLIC_URL}>
+                    <Link to={process.env.PUBLIC_URL}>
                         <Logo />
                         <p>What To Eat Today?</p>
-                    </a>
+                    </Link>
                 </div>
                 <ul className="nav-links nav-default">
                     <li><Link to={process.env.PUBLIC_URL + "/"}><span>Home</span></Link></li>

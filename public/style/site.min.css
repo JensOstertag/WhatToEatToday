@@ -26,15 +26,8 @@
   --fnt-weightBolder: 500;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-  scroll-behavior: smooth;
-}
-
-body.darkmode {
+/* Colors that are used in Dark Mode */
+html.dark {
   --clr-background: #151515;
   --clr-font: #cccccc;
   --clr-font-light: #444444;
@@ -49,9 +42,24 @@ body.darkmode {
   --clr-shadow: #222222;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--clr-background);
   color: var(--clr-font);
+  transition: background-color 1000ms linear, color 1000ms linear !important;
+}
+
+/* Transition that is used when the UI Changes from Dark to Light Mode or from Light to Dark */
+body.dark-transition *:not(:is(div:not(.darkmode-transition), section:not(.darkmode-transition), article:not(.darkmode-transition))),
+body.dark-transition .burger div {
+  transition: all 1000ms linear !important;
 }
 
 p {

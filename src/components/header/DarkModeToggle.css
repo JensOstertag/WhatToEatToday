@@ -16,11 +16,11 @@
     padding: .5em;
 }
 
-body.darkmode .dark-mode-toggle .dark-mode-toggle-highlight {
+html.dark .dark-mode-toggle .dark-mode-toggle-highlight {
     float: right;
 }
 
-body:not(.darkmode) .dark-mode-toggle .dark-mode-toggle-highlight {
+html:not(.dark) .dark-mode-toggle .dark-mode-toggle-highlight {
     float: left;
 }
 
@@ -29,10 +29,10 @@ body:not(.darkmode) .dark-mode-toggle .dark-mode-toggle-highlight {
     margin: auto 0;
 }
 
-body.darkmode .dark-mode-toggle .svg-sun {
+html.dark .dark-mode-toggle .svg-sun {
     display: none;
 }
 
-body:not(.darkmode) .dark-mode-toggle .svg-moon {
+html:not(.dark) .dark-mode-toggle .svg-moon {
     display: none;
 }
