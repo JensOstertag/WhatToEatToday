@@ -23,9 +23,9 @@
     font-size: var(--fnt-sizeSmaller);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
     .selectable {
-        width: 50%;
+        width: 47.5%;
     }
 }
 
