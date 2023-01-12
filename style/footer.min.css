@@ -3,7 +3,6 @@ footer {
   line-height: 1.5;
   padding: 20px 10%;
   min-height: 10vh;
-  background: var(--clr-bright1);
 }
 
 .footer-text {
@@ -19,7 +18,7 @@ footer {
 .footer-text,
 .footer-sections .footer-section .footer-title,
 .footer-sections .footer-section .footer-link {
-  color: var(--clr-black);
+  color: var(--clr-font);
   padding: 3px 15px;
   display: block;
 }
@@ -27,7 +26,7 @@ footer {
 footer hr {
   height: 1px;
   border: none;
-  background: var(--clr-gray);
+  background: var(--clr-font-light);
 }
 
 .footer-sections {
@@ -55,14 +54,14 @@ footer hr {
 
 .footer-sections .footer-section .footer-link:hover {
   text-decoration: underline;
-  transition: all 50ms linear;
+  transition: text-decoration 50ms linear;
 }
 
 .footer-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: var(--clr-black);
+  color: var(--clr-font);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -71,11 +70,19 @@ footer hr {
   font-weight: 800;
 }
 
-.footer-logo img {
+.footer-logo img,
+.footer-logo svg {
   float: left;
   width: 5vh;
   margin-right: 15px;
   border-radius: 5px;
+}
+
+.footer-logo svg path,
+.footer-logo svg rect,
+.footer-logo svg circle {
+  fill: var(--clr-font);
+  stroke: var(--clr-font);
 }
 
 .copyright {

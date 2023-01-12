@@ -1,27 +1,21 @@
 :root {
-  --clr-bright1: #ffffff;
-  --clr-dark1: #252525;
-  --clr-bright2: #e6e6e6;
-  --clr-dark2: #303030;
-  --clr-brightAccent: #252525;
-  --clr-darkAccent: #e6e6e6;
-  --clr-brightColor1: #2f7cff;
-  --clr-darkColor1: #2f7cff;
-  --clr-brightColor2: #275fda;
-  --clr-darkColor2: #275fda;
-  --clr-white: #ffffff;
-  --clr-black: #000000;
-  --clr-lightgray: #f0f0f0;
-  --clr-gray: #aaaaaa;
-  --clr-valid: #00c846;
-  --clr-medium: #ffbb00;
-  --clr-invalid: #ff0000;
-  --clr-color1: #5acd70;
-  --clr-lightcolor1: rgba(90, 205, 112, .3);
-  --clr-color2: #5a90cd;
-  --clr-lightcolor2: rgba(90, 144, 205, .3);
-  --clr-color3: #fc3e3e;
-  --clr-lightcolor3: rgba(252, 62, 62, .3);
+  --clr-background: #ffffff; /* Default Background Color */
+
+  --clr-font: #000000; /* Default Font Color */
+  --clr-font-light: #aaaaaa; /* Lighter Font Color */
+  --clr-font-invert: #ffffff; /* Inverted Font Color */
+
+  --clr-gray: #aaaaaa; /* Gray Color used for light Borders or Lines */
+
+  --clr-primary: #2f7cff; /* Primary Color */
+  --clr-primary-effect: #275fda; /* Effect for Primary Color */
+  --clr-primary-font: #ffffff; /* Font Color if used on Area with Primary Color as Background */
+
+  --clr-secondary: #ff2f7c; /* Secondary Color */
+  --clr-secondary-effect: #da275f; /* Effect for Secondary Color */
+  --clr-secondary-font: #ffffff; /* Font Color if used on Area with Secondary Color as Background */
+
+  --clr-shadow: #f0f0f0; /* Shadow Color */
 
   --fnt-sizeDefault: 1.1rem;
   --fnt-sizeSmall: .75rem;
@@ -32,12 +26,40 @@
   --fnt-weightBolder: 500;
 }
 
+/* Colors that are used in Dark Mode */
+html.dark {
+  --clr-background: #151515;
+  --clr-font: #cccccc;
+  --clr-font-light: #444444;
+  --clr-font-invert: #000000;
+  --clr-gray: #444444;
+  --clr-primary: #2764cf;
+  --clr-primary-effect: #204bb1;
+  --clr-primary-font: #cccccc;
+  --clr-secondary: #ff2f7c;
+  --clr-secondary-effect: #da275f;
+  --clr-secondary-font: #cccccc;
+  --clr-shadow: #222222;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-background);
+  color: var(--clr-font);
+  transition: background-color 1000ms linear, color 1000ms linear !important;
+}
+
+/* Transition that is used when the UI Changes from Dark to Light Mode or from Light to Dark */
+body.dark-transition *:not(:is(div:not(.darkmode-transition), section:not(.darkmode-transition), article:not(.darkmode-transition))),
+body.dark-transition .burger div {
+  transition: all 1000ms linear !important;
 }
 
 p {
@@ -83,13 +105,13 @@ h2.nomargin {
 }
 
 a {
-  color: var(--clr-brightColor1);
+  color: var(--clr-primary);
   text-decoration: none;
   transition: color 100ms linear;
 }
 
 a:hover {
-  color: var(--clr-brightColor2);
+  color: var(--clr-primary-effect);
 }
 
 a.underline {
@@ -97,8 +119,8 @@ a.underline {
 }
 
 button.simple-button {
-  background-color: var(--clr-brightColor1);
-  color: var(--clr-white);
+  background-color: var(--clr-primary);
+  color: var(--clr-primary-font);
   border: none;
   border-radius: .25em;
   padding: .5em;
@@ -107,7 +129,7 @@ button.simple-button {
 }
 
 button.simple-button:hover {
-  background-color: var(--clr-brightColor2);
+  background-color: var(--clr-primary-effect);
 }
 
 ::-webkit-scrollbar {
@@ -128,16 +150,16 @@ button.simple-button:hover {
 }
 
 ::-webkit-scrollbar-track {
-  color: var(--clr-dark1);
+  color: var(--clr-font);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--clr-dark1);
+  background: var(--clr-font);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-  background: var(--clr-black);
+  background: var(--clr-font);
 }
 
 div#root {
