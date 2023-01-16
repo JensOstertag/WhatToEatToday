@@ -58,7 +58,7 @@ class Result extends React.Component {
                 // Generate a Garnish only
                 const garnish = food["garnish"];
                 foundFood.push(this.findPossibleFood(garnish, eatingHabits));
-            } else if(foodType === "main-ingredient") {
+            } else if(foodType === "main") {
                 // Generate a main Ingredient only
                 const mainIngredients = food["main-ingredients"];
                 foundFood.push(this.findPossibleFood(mainIngredients, eatingHabits));

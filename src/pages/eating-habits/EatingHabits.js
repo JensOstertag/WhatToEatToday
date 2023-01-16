@@ -4,13 +4,7 @@ import Selectable from '../../components/selectable/Selectable';
 import Selector from '../../components/selector/Selector';
 
 class EatingHabits extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log(this.props);
-  }
-
   render() {
-    console.log(this.props.location);
     return (
       <section>
         <p>Please Select one of the following Eating Habits.</p>
