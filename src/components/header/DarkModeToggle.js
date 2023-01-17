@@ -19,6 +19,10 @@ class DarkModeToggle extends React.Component {
             </div>
         );
     }
+
+    componentDidMount() {
+        Darkmode.init();
+    }
 }
 
 export default DarkModeToggle;
